@@ -437,7 +437,7 @@ func (m Model) View() string {
 		s.WriteRune('\n')
 	}
 
-	for i := lipgloss.Height(s.String()); i <= m.Height; i++ {
+	for i := lipgloss.Height(s.String()); i < m.Height; i++ {
 		s.WriteRune('\n')
 	}
 
